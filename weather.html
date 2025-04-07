@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button id="search-btn">Search</button>
+        </div>
+        
+        <div class="error" id="error-message">
+            City not found. Please try again.
+        </div>
+        
+        <div class="weather-info" id="weather-info">
+            <h1 id="city-name">Weather App</h1>
+            <div class="weather-icon">
+                <img id="weather-icon" src="" alt="Weather icon">
+            </div>
+            <div class="temp" id="temperature">--°C</div>
+            <div class="description" id="weather-description">Enter a city to see weather</div>
+            
+            <div class="details">
+                <div class="detail-item">
+                    <div>Humidity</div>
+                    <div id="humidity">--%</div>
+                </div>
+                <div class="detail-item">
+                    <div>Wind Speed</div>
+                    <div id="wind-speed">-- km/h</div>
+                </div>
+                <div class="detail-item">
+                    <div>Pressure</div>
+                    <div id="pressure">-- hPa</div>
+                </div>
+                <div class="detail-item">
+                    <div>Feels Like</div>
+                    <div id="feels-like">--°C</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+</html>
